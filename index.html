@@ -288,9 +288,9 @@ document.addEventListener('webkitfullscreenchange', function() {
 <canvas id="screen" width="480" height="320"></canvas>
 <section id="controls">
 	<div id="preload">
-		<button class="bigbutton" id="select" onclick="document.getElementById('loader').click()">SELECT</button>
+		<button class="bigbutton" id="select" onclick="document.getElementById('loader').click()">选择本地游戏</button>
 		<input id="loader" type="file" accept=".gba" onchange="run(this.files[0]);">
-		<button onclick="document.getElementById('saveloader').click()">Upload Savegame</button>
+		<button onclick="document.getElementById('saveloader').click()">上传游戏存档</button>
 		<input id="saveloader" type="file" onchange="uploadSavedataPending(this.files[0]);">
 	</div>
 	<div id="ingame" class="hidden">
@@ -310,10 +310,6 @@ document.addEventListener('webkitfullscreenchange', function() {
 		<p id="openDebug" onclick="enableDebug()">Debugger</p>
 	</div>
 </section>
-<ul id="links">
-	<li><a href="http://github.com/endrift/gbajs/">Fork me on GitHub!</a></li>
-	<li><a href="https://github.com/endrift/gbajs/wiki/Compatibility-List">Compatibility list</a></li>
-</ul>
 <footer>© 2012 – 2013 <a href="http://endrift.com/">Jeffrey Pfau</a></footer>
 </body>
 </html>
